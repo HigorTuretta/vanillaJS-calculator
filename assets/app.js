@@ -2,8 +2,7 @@ let tecla = "";
 let tela = document.getElementById("telaDig");
 let conta = "";
 let ultimaTecla = "";
-let operador = 0;
-
+let resultado = 0;
 
 document.ready = function () {
   addEventListener("keydown", pressButton());
@@ -24,7 +23,7 @@ function pressButton(event, clickEvent) {
     ultimaTecla = evento;
   }
 
-  if (evento == "c" || evento == "C" || evento == 'Delete') {
+  if (evento == "c" || evento == "C" || evento == "Delete") {
     tecla = document.getElementById("tC");
     teclaApertada();
     tela.value = "";
@@ -33,6 +32,7 @@ function pressButton(event, clickEvent) {
     teclaApertada();
     conta = tela.value;
     tela.value = calcular(conta);
+    resultado = 1;
   } else {
     if ("/*-+.".indexOf(evento) != -1 && tela.value.length == 0) {
     } else {
@@ -60,6 +60,11 @@ function pressButton(event, clickEvent) {
           tecla = document.getElementById("t" + evento);
         }
 
+        if (resultado == 1) {
+          tela.value = "";
+          resultado = 0;
+        }
+        
         ultimaTecla = evento;
 
         if (verificaTecla(evento, tela.value.slice(-1))) {
