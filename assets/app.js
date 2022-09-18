@@ -121,6 +121,8 @@ function verificaTecla(pressKey, lastKey) {
 
   if (isNaN(pressKey) && "/*-+.".indexOf(lastKey) != -1) return false;
 
+  if("/*-+.".indexOf(pressKey) != -1 && resultado == 0 && tela.value == "") return false;
+
   if (pressKey == lastKey && "/*-+.".indexOf(lastKey) != -1) {
     return false;
   } else {
