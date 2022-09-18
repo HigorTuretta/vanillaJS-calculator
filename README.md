@@ -1,4 +1,4 @@
-<h1 align="center">Calculadora</h1>
+<h1 align="center"<a href="https://purejscalculator.netlify.app/" target="_Blank" >Calculadora</a></h1>
 <p align="center">Uma calculadora simples, feita com JavaScript PURO! 😎</p>
 
 <h4 align="center"> 
