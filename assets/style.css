@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@font-face {
+  font-family: "calculator";
+  src: url(../assets/fonts/Calculator.ttf);
+}
+
+body {
+  display:flex; 
+  flex-direction:column; 
+  margin: 0;
+  padding: 0;
+  background-color: rgb(217, 217, 217);
+  height: 100vh;
+
+}
+
+button {
+  all: unset;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  text-shadow: 2px 3px rgb(152, 152, 152);
+  color: rgb(18, 18, 18);
+}
+
+header img {
+  width: 50px;
+  margin-left: 1%;
+  filter: drop-shadow(2px 3px rgb(152, 152, 152));
+}
+#area-calculadora {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculadora {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  background-color: rgb(26, 26, 26);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: black 10px 20px 30px;
+}
+
+.model {
+  position: absolute;
+  right: 0;
+  margin: 8px 15px;
+  color: rgb(193, 193, 193);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 11px;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.tela {
+  background-color: rgb(55, 102, 20);
+  width: 84%;
+  height: 50px;
+  margin: 10% 5% 5% 5%;
+  padding: 5px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-radius: 3px;
+  box-shadow: inset black 3px 3px 5px;
+  font-family: "calculator";
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  caret-color: transparent;
+  pointer-events: none;
+}
+input:focus {
+  outline: none;
+}
+.area-teclas {
+  padding: 15px;
+}
+.linha-teclas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.tecla {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  font-family: "consolas";
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 5px;
+  color: white;
+  transition: all 0.5s;
+}
+.tecla:hover {
+  cursor: pointer;
+}
+.normal-key {
+  background-color: rgb(65, 65, 65);
+  box-shadow: 4px 4px rgb(40, 40, 40);
+}
+.reset-key {
+  background-color: rgb(170, 2, 2);
+  box-shadow: 4px 4px rgb(110, 4, 4);
+}
+.erase-key {
+  background-color: rgb(170, 164, 2);
+  box-shadow: 4px 4px rgb(104, 101, 5);
+}
+.result-key {
+  background-color: green;
+  box-shadow: 4px 4px darkgreen;
+  padding: 0 12.5%;
+}
+
+.click {
+  box-shadow: 1px 1px rgb(30, 30, 30);
+  transform: scale(0.95);
+}
+
+footer{
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.footer-top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.611);
+  width: 100%;
+  height: 40px;
+  box-shadow: 0px -3px 0 rgba(226, 255, 5, 0.566);
+}
+.footer-content{
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 1px;
+}
+.footer-content a{
+  text-decoration: none;
+  color: rgb(169, 232, 255);
+}
+.footer-content i{
+  color: rgb(255, 240, 75);
+  font-size: 1.3rem;
+}

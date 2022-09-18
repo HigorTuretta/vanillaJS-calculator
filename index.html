@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- assets links -->
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://kit.fontawesome.com/243351fe15.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="assets/images/ico.png" type="image/x-icon">
+    <title>Calculadora - Vanilla JS</title>
+</head>
+
+<body onkeydown="pressButton(event)">
+    <header>
+        <h1>Calculadora</h1>
+        <img src="assets/images/calculator.png" title="Calculator icons created by
+        Freepik - Flaticon">
+    </header>
+    <section id="area-calculadora">
+        <div class="calculadora">
+            <div class="model">
+                Tabajara Calc3
+            </div>
+            <input type="text" readonly autofocus dir="ltr" maxlength="12" id="telaDig" class="tela">
+
+            <div class="area-teclas">
+                <div class="linha-teclas">
+                    <button onclick="pressButton('', 'C')" class="tecla reset-key" id="tC">C</button>
+                    <button onclick="pressButton('', 'Backspace')" class="tecla erase-key" id="tBackspace">DEL</button>
+                    <button onclick="pressButton('', '/')" class="tecla normal-key" id="t/">/</button>
+                    <button onclick="pressButton('', '*')" class="tecla normal-key" id="t*">*</button>
+                </div>
+                <div class="linha-teclas">
+                    <button onclick="pressButton('', '1')" class="tecla normal-key" id="t1">1</button>
+                    <button onclick="pressButton('', '2')" class="tecla normal-key" id="t2">2</button>
+                    <button onclick="pressButton('', '3')" class="tecla normal-key" id="t3">3</button>
+                    <button onclick="pressButton('', '-')" class="tecla normal-key" id="t-">-</button>
+                </div>
+                <div class="linha-teclas">
+                    <button onclick="pressButton('', '4')" class="tecla normal-key" id="t4">4</button>
+                    <button onclick="pressButton('', '5')" class="tecla normal-key" id="t5">5</button>
+                    <button onclick="pressButton('', '6')" class="tecla normal-key" id="t6">6</button>
+                    <button onclick="pressButton('', '+')" class="tecla normal-key" id="t+">+</button>
+                </div>
+                <div class="linha-teclas">
+                    <button onclick="pressButton('', '7')" class="tecla normal-key" id="t7">7</button>
+                    <button onclick="pressButton('', '8')" class="tecla normal-key" id="t8">8</button>
+                    <button onclick="pressButton('', '9')" class="tecla normal-key" id="t9">9</button>
+                    <button onclick="pressButton('', '.')" class="tecla normal-key" id="dot">.</button>
+                </div>
+                <div class="linha-teclas">
+                    <button onclick="pressButton('', '0')" class="tecla normal-key" id="t0">0</button>
+                    <button onclick="pressButton('', '00')" class="tecla normal-key" id="t00">00</button>
+                    <button onclick="pressButton('', 'Enter')" class="tecla result-key" id="tEnter">=</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-content">
+                Made with pure <i class="fab fa-js"> </i> by <a target="_blank"
+                    href="https://github.com/HigorTuretta/FogoDoDoom">Higor
+                    Turetta</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/app.js"></script>
+</body>
+
+</html>
