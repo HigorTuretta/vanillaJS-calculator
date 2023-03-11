@@ -61,7 +61,11 @@ function pressButton(event, clickEvent) {
         }
 
         if (resultado == 1) {
-          tela.value = "";
+          if (evento == "+" || evento == "-" || evento == "*" || evento == "/") {
+            conta = tela.value + evento;
+          } else {
+            tela.value = "";
+          }         
           resultado = 0;
         }
         
